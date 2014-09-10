@@ -1,0 +1,68 @@
+﻿@charset "UTF-8";
+
+body, body * {vertical-align: baseline; border: 0 none; outline: 0; padding: 0; margin: 0; background-color: black; }
+#container_dc { position: absolute; width: 300px; height: 250px; cursor: pointer;}
+#content_dc { position: absolute; width: 298px; height: 248px; border:1px solid #cacaca; background-color: #FFF; overflow: hidden; background-color:#ffd500;}
+
+.logo {position: absolute;width: 123px;height: 40px;left: 88px;top: 5px;background: url(sprites.png) -0px -380px no-repeat;z-index: 0;}
+.one.content     {position: absolute;width: 262px;height: 52px;left: 20px;top: 77px;background: url(sprites.png) -0px -0px no-repeat;z-index: 2;opacity: 0;}
+.one.bottles     {position: absolute;width: 299px;height: 83px;left: 0px;top: 153px;background: url(sprites.png) 5px -52px no-repeat;z-index: 2;opacity: 0;}
+.one.fish-bottle {position: absolute;width: 50px;height: 101px;left: 198px;top: 149px; background: url(sprites.png) -300px -1px no-repeat;z-index: 2;opacity: 0;}
+
+.two.copyPharmacist     {position: absolute;width: 272px;height: 22px;left: 15px;top: 64px;background: url(sprites.png) 0px -136px no-repeat;z-index: 2;opacity: 0;}
+.two.picturePharmacist  {position: absolute;width: 240px;height: 146px;left: 48px;bottom: -1px;background: url(sprites.png) -162px -267px no-repeat;z-index: 2;opacity: 0;}
+
+.three.big-bottle     {position: absolute;width: 122px;height: 220px;left: 0px;top: 25px;background: url(sprites.png) 0px -159px no-repeat;z-index: 2;opacity: 0;}
+.three.copy     {position: absolute;width: 179px;height: 78px;left: 97px;top: 72px;background: url(sprites.png) -171px -190px no-repeat; z-index: 2; opacity: 0; }
+.three.button  {position: absolute;width: 96px;height: 22px;left: 144px;top: 161px;background: url(sprites.png) -254px -168px no-repeat;z-index: 2;opacity: 0;}
+.three.legal  {position: absolute;width: 175px;height: 10px;left: 102px;top: 224px;background: url(sprites.png) -177px -158px no-repeat;z-index: 2;opacity: 0;}
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
+@-webkit-keyframes fadeInOut { 0%{ opacity:0; } 15% { opacity:1; } 85% { opacity:1; } 100% { opacity:0; } }
+@-moz-keyframes fadeInOut { 0%{ opacity:0; } 15% { opacity:1; } 85% { opacity:1; } 100% { opacity:0; } }
+@keyframes fadeInOut { 0%{ opacity:0; } 15% { opacity:1; } 85% { opacity:1; } 100% { opacity:0; } }
+
+@-webkit-keyframes fadeIn { 0%{ opacity:0; } 15% { opacity:1; } 85% { opacity:1; } 100% { opacity:1; } }
+@-moz-keyframes fadeIn { 0%{ opacity:0; } 15% { opacity:1; } 85% { opacity:1; } 100% { opacity:1; } }
+@keyframes fadeIn { 0%{ opacity:0; } 15% { opacity:1; } 85% { opacity:1; } 100% { opacity:1; } }
+
+@-webkit-keyframes fadeIn { 0%{ opacity:0; } 100% { opacity:1; }}
+@-moz-keyframes fadeIn { 0%{ opacity:0; } 100% { opacity:1; } }
+@keyframes fadeIn { 0%{ opacity:0; } 100% { opacity:1; } }
+
+
+@-webkit-keyframes enlarge { 0%{ transform:scale(0.5); opacity:0; } 100% {transform:scale(1); opacity:1} }
+@-moz-keyframes enlarge {0%{ transform:scale(0.5); opacity:0; } 100% {transform:scale(1); opacity:1} }
+@keyframes enlarge { 0%{ transform:scale(0.5); opacity:0; }  100% {transform:scale(1); opacity:1} }
+
+
+@-webkit-keyframes slideInOut { 0%{ opacity:0;  -webkit-transform: translate(0px,25px); } 15% { opacity:1;  -webkit-transform: translate(0px,0px);  } 85% { opacity:1;   -webkit-transform: translate(0px,0px); } 100% { opacity:0; -webkit-transform: translate(0px,0px);  } }
+@-moz-keyframes slideInOut  { 0%{ opacity:0;  -moz-transform: translate(0px,25px); } 15% { opacity:1;  -moz-transform: translate(0px,0px);  } 85% { opacity:1;   -moz-transform: translate(0px,0px); } 100% { opacity:0; -moz-transform: translate(0px,0px);  }  }
+@keyframes slideInOut  {0%{ opacity:0;  transform: translate(0px,25px); } 15% { opacity:1;  transform: translate(0px,0px);  } 85% { opacity:1;   transform: translate(0px,0px); } 100% { opacity:0; transform: translate(0px,0px);  }  }
+  
+
+.fade-in-out {
+    opacity:0; -webkit-animation:fadeInOut ease-in 1; -moz-animation:fadeInOut ease-in 1; animation:fadeInOut ease-in 1;
+    -webkit-animation-fill-mode:forwards; -moz-animation-fill-mode:forwards; animation-fill-mode:forwards; 	
+	-webkit-animation-duration:5s; -moz-animation-duration:5s; animation-duration:5s;
+}
+.fade-in-out.one {-webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s;}
+.fade-in-out.one.fish-bottle  {-webkit-animation-delay: 1.5s; -moz-animation-delay: 1.5s; animation-delay: 1.5s;	-webkit-animation-duration:4.35s; -moz-animation-duration:4.35s; animation-duration:4.35s;}
+.fade-in-out.two {-webkit-animation-delay: 6.5s; -moz-animation-delay:6.5s; animation-delay: 6.5s; }
+
+
+.fade-in {opacity:0; -webkit-animation:fadeIn ease-in 1; -moz-animation:fadeIn ease-in 1; animation:fadeIn ease-in 1;
+    -webkit-animation-fill-mode:forwards; -moz-animation-fill-mode:forwards; animation-fill-mode:forwards;
+ 	-webkit-animation-duration:5s; -moz-animation-duration:5s; animation-duration:5s;
+} 
+.fade-in.two { -webkit-animation-delay: 5.5s; -moz-animation-delay: 5.5s; animation-delay: 5.5s; }
+.fade-in.three { -webkit-animation-delay: 11.5s; -moz-animation-delay: 11.5s; animation-delay: 11.5s; -webkit-animation-duration:2.5s; -moz-animation-duration:2.5s; animation-duration:2.5s }
+
+.slide-in-out {
+    opacity:0; -webkit-animation:slideInOut ease-out 1; -moz-animation:slideInOut ease-out 1; animation:slideInOut ease-out 1;
+    -webkit-animation-fill-mode:forwards; -moz-animation-fill-mode:forwards; animation-fill-mode:forwards; 	
+	-webkit-animation-duration:5.4s; -moz-animation-duration:5.4s; animation-duration:5.4s;
+}
+.slide-in-out.one {-webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s;}

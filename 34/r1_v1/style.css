@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+body, body * {vertical-align: baseline; border: 0 none; outline: 0; padding: 0; margin: 0;}
+#container_dc { position: absolute; width: 300px; height: 250px; cursor: pointer;}
+#content_dc { position: absolute; width: 298px; height: 248px; border:1px solid #cacaca; background-color: #FFF; overflow: hidden; background-color:#ffd500;}
+
+.logo {position: absolute; width: 124px; height: 42px; left: 14px; top: 5px; background: url(logo.png) no-repeat; z-index: 3;}
+.contentRight1{position: absolute; width: 170px; height: 250px; left: 129px; top: -1px; background: url(women.png)no-repeat; /* clip: rect(0px 23px 0px 0px); */ z-index: 2; opacity:0;}
+.contentLeft2{ position: absolute; width: 132px; height: 160px; left: 14px; top: 67px; background: url(sprites.png) 0px -251px no-repeat; /* clip: rect(0px 23px 0px 0px); */ z-index: 2; opacity:0;}
+.contentRight3{position: absolute; width: 161px; height: 217px; left: 138px; top: 25px; background: url(bottle.png)no-repeat; /* clip: rect(0px 23px 0px 0px); */ z-index: 2; opacity:0;}
+.contentLeft4{position: absolute; width: 157px; height: 156px; left: 17px; top: 66px; background: url(sprites.png) -3px -83px no-repeat; /* clip: rect(0px 23px 0px 0px); */ z-index: 2; opacity:0; }
+.contentRight5{position: absolute; width: 150px; height: 234px; left: 159px; top: 0px; background: url(sprites.png) -175px 28px no-repeat; /* clip: rect(0px 23px 0px 0px); */ z-index: 2; opacity:0;}
+.contentLeft6{position: absolute; width: 167px; height: 99px; left: 17px; top: 53px; background: url(sprites.png) 0px 13px no-repeat; /* clip: rect(0px 23px 0px 0px); */ z-index: 2; opacity: 0;}
+.learMoreBtn{position: absolute; width: 147px; height: 20px; left: 18px; top: 195px; background: url(learnmoreBtn.png) no-repeat; /* clip: rect(0px 23px 0px 0px); */ z-index: 2; opacity: 0;}
+.legalText{position: absolute; width: 228px; height: 13px; left: 31px; top: 227px; background: url(sprites.png) 0px -238px no-repeat; /* clip: rect(0px 23px 0px 0px); */ z-index: 2; opacity: 0;}
+.USPlogo{position: absolute; width: 56px; height: 50px; left: 156px; top: 142px; background: url(USPlogo.png)no-repeat; /* clip: rect(0px 23px 0px 0px); */ z-index: 2; opacity: 0;}
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
+@-webkit-keyframes fadeInOut { 0%{ opacity:0; } 15% { opacity:1; } 85% { opacity:1; } 100% { opacity:0; } }
+@-moz-keyframes fadeInOut { 0%{ opacity:0; } 15% { opacity:1; } 85% { opacity:1; } 100% { opacity:0; } }
+@keyframes fadeInOut { 0%{ opacity:0; } 15% { opacity:1; } 85% { opacity:1; } 100% { opacity:0; } }
+
+@-webkit-keyframes fadeIn { 0%{ opacity:0; } 15% { opacity:1; } 85% { opacity:1; } 100% { opacity:1; } }
+@-moz-keyframes fadeIn { 0%{ opacity:0; } 15% { opacity:1; } 85% { opacity:1; } 100% { opacity:1; } }
+@keyframes fadeIn { 0%{ opacity:0; } 15% { opacity:1; } 85% { opacity:1; } 100% { opacity:1; } }
+/*
+@-webkit-keyframes fadeIn { 0%{ opacity:0; } 100% { opacity:1; }}
+@-moz-keyframes fadeIn { 0%{ opacity:0; } 100% { opacity:1; } }
+@keyframes fadeIn { 0%{ opacity:0; } 100% { opacity:1; } }
+*/
+@-webkit-keyframes enlarge { 0%{ -webkit-transform:scale(0.5);opacity:0; } 100% { -webkit-transform:scale(1);opacity:1 }}
+@-moz-keyframes enlarge {0%{ transform:scale(0.5); opacity:0; } 100% {transform:scale(1); opacity:1} }
+@keyframes enlarge { 0%{ transform:scale(0.5); opacity:0; }  100% {transform:scale(1); opacity:1} }
+  
+.fade-in-out {
+    opacity:0; -webkit-animation:fadeInOut ease-in 1; -moz-animation:fadeInOut ease-in 1; animation:fadeInOut ease-in 1;
+    -webkit-animation-fill-mode:forwards; -moz-animation-fill-mode:forwards; animation-fill-mode:forwards; 	
+	-webkit-animation-duration:5s; -moz-animation-duration:5s; animation-duration:5s;
+}
+.fade-in-out.one {-webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s;}
+.fade-in-out.two {-webkit-animation-delay: 5.5s; -moz-animation-delay:5.5s; animation-delay: 5.5s; }
+
+
+.fade-in {opacity:0; -webkit-animation:fadeIn ease-in 1; -moz-animation:fadeIn ease-in 1; animation:fadeIn ease-in 1;
+    -webkit-animation-fill-mode:forwards; -moz-animation-fill-mode:forwards; animation-fill-mode:forwards;
+ 	-webkit-animation-duration:5s; -moz-animation-duration:5s; animation-duration:5s;
+} 
+.fade-in.two { -webkit-animation-delay: 5.5s; -moz-animation-delay: 5.5s; animation-delay: 5.5s; }
+.fade-in.three { -webkit-animation-delay: 10.5s; -moz-animation-delay: 10.5s; animation-delay: 10.5s; }
+.fade-in.four { -webkit-animation-delay: 11s; -moz-animation-delay: 11s; animation-delay: 11s; }
+
+
+.enlarge{opacity:0; -webkit-animation:enlarge ease-out 1; -moz-animation:enlarge ease-out 1; animation:enlarge ease-out 1;
+    -webkit-animation-fill-mode:forwards; -moz-animation-fill-mode:forwards; animation-fill-mode:forwards;
+ 	-webkit-animation-duration:0.8s; -moz-animation-duration:0.8s; animation-duration:0.8s;
+} 
+.enlarge.two { -webkit-animation-delay: 6.5s; -moz-animation-delay: 6.5s; animation-delay: 6.5s; }

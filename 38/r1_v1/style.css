@@ -60,8 +60,8 @@ body, body * {vertical-align: baseline; border: 0 none; outline: 0; padding: 0; 
  	-webkit-animation-duration:5s; -moz-animation-duration:5s; animation-duration:5s;
 } 
 .fade-in.two { -webkit-animation-delay: 5.5s; -moz-animation-delay: 5.5s; animation-delay: 5.5s; }
-.fade-in.three { -webkit-animation-delay: 11.5s; -moz-animation-delay: 11.5s; animation-delay: 11.5s; -webkit-animation-duration:2.5s; -moz-animation-duration:2.5s; animation-duration:2.5s }
-.fade-in.three.button { -webkit-animation-delay: 12.5s; -moz-animation-delay: 12.5s; animation-delay: 12.5s; -webkit-animation-duration:2.5s; -moz-animation-duration:2.5s; animation-duration:2.5s }
+.fade-in.three { -webkit-animation-delay: 11.5s; -moz-animation-delay: 11.5s; animation-delay: 11.5s; -webkit-animation-duration:1s; -moz-animation-duration:1s; animation-duration:1s }
+.fade-in.three.button { -webkit-animation-delay: 12.0s; -moz-animation-delay: 12.0s; animation-delay: 12.0s; -webkit-animation-duration:1s; -moz-animation-duration:1s; animation-duration:1s }
 
 .spin-in-out {
      -webkit-animation:spin linear infinite; -moz-animation:spin linear infinite; animation:spin linear infinite;

@@ -6,7 +6,7 @@ body, body * {vertical-align: baseline; border: 0 none; outline: 0; padding: 0; 
 
 .logo {	position: absolute;width: 123px;height: 65px;left: 88px;top: 10px;background: url('img_logo.jpg') -0px -0px no-repeat;z-index: 0;}
 .one.content     {position: absolute;width: 188px;height: 52px;left: 55px;top: 95px;background: url('img_text.png');z-index: 2;opacity: 0;}
-.one.hand     {position: absolute;width: 200px;height: 88px;right: 0px;bottom: 0;background: url('hand.jpg') no-repeat;z-index: 2;opacity: 0;}
+.one.hand     {position: absolute;width: 200px;height: 88px;right: 0px;bottom: 0;background: url('hand.png') no-repeat;z-index: 2;opacity: 0;}
 
 .two.copyVitamins   {position: absolute;width: 258px;height: 45px;left: 21px;top: 81px;background: url('img_text.png') -187px -1px;z-index: 3;opacity: 0;}
 .two.pictureTablet  {position: absolute;width: 92px;height: 51px;left: 96px;top: 166px;background: url('fruitTablet.png');z-index: 2;opacity: 0;}

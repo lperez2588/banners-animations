@@ -3,6 +3,22 @@
 <head>
 	<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
     <link type="text/css" href="style.css" rel="stylesheet">
+    <script type="text/javascript">
+        var clickTag = "https://www.naturemade.com/specialty/vitamelts";
+        window.onload = function () {
+            document.getElementById("disclaimer").onclick = function () {
+                document.getElementById("disclaimerContent").style.zIndex = "3";
+                document.getElementById("disclaimerContent").style.opacity = "1";
+            };
+            document.getElementById("close").onclick = function () {
+                document.getElementById("disclaimerContent").style.opacity = "0";
+                document.getElementById("disclaimerContent").style.zIndex = "2";
+                setTimeout(function () {
+                    document.getElementById("disclaimerContent").style.zIndex = "0";
+                }, 1000);
+            };
+        };
+     </script>
 </head>
 <body>
 	<div id='container_dc'>
@@ -20,7 +36,11 @@
 			<div class="three bottle fade-in"></div>
 			<div class="three copy fade-in"></div>
 			<div class="three button fade-in"></div>
-			<div class="three legal fade-in"></div>
+			<div class="three legal fade-in" id="disclaimer"></div>
+            
+            <div id="disclaimerContent">
+                <a href="#" id="close"> </a>
+            </div>
 		</div>
 	</div>
 </body>

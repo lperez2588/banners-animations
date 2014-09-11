@@ -18,6 +18,9 @@ body, body * {vertical-align: baseline; border: 0 none; outline: 0; padding: 0; 
 .three.button  {position: absolute;width: 93px;height: 22px;left: 161px;top: 167px;background: url('learnMorebtn.png');z-index: 2;opacity: 0;}
 .three.legal  {position: absolute;width: 48px;height: 11px;right: 4px;bottom: 4px;background: url('img_text.png') -378px -49px no-repeat;z-index: 2;opacity: 0;}
 
+#disclaimerContent  {   background: url('disclaimer.png') no-repeat;    z-index: 0;    position: absolute;    width: 100%;    height: 100%;    left: 19px;    top: 5px;  opacity:0;   -webkit-transition: opacity 0.5s;  -moz-transition:   opacity 0.5s; transition:  opacity 0.5s;    }
+#disclaimerContent #close{    position: absolute;    top: 22px;    left: 188px;    width: 50px;    height: 20px;}
+
 :focus {outline:none;}
 ::-moz-focus-inner {border:0;}
 

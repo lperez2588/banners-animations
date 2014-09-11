@@ -53,8 +53,8 @@ body, body * {vertical-align: baseline; border: 0 none; outline: 0; padding: 0; 
 }
 .fade-in-out.one {-webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s; -webkit-animation-duration:4s; -moz-animation-duration:4s; animation-duration:4s;}
 .fade-in-out.two {-webkit-animation-delay: 6.5s; -moz-animation-delay:6.5s; animation-delay: 6.5s; }
-.fade-in-out.two.pictureTablet {-webkit-animation-delay: 6.5s; -moz-animation-delay:6.5s; animation-delay: 6.5s; -webkit-animation-duration:3s; -moz-animation-duration:3s; animation-duration:3s; }
-.fade-in-out.two.pictureSwirlContainer {-webkit-animation-delay: 9.0s; -moz-animation-delay:9.0s; animation-delay: 9.0s; -webkit-animation-duration:2.5s; -moz-animation-duration:2.5s; animation-duration:2.5s; }
+.fade-in-out.two.pictureTablet {-webkit-animation-delay: 6.5s; -moz-animation-delay:6.5s; animation-delay: 6.5s; -webkit-animation-duration:2.25s; -moz-animation-duration:2.25s; animation-duration:2.25s; }
+.fade-in-out.two.pictureSwirlContainer {-webkit-animation-delay: 8.0s; -moz-animation-delay:8.0s; animation-delay: 8.0s; -webkit-animation-duration:2.5s; -moz-animation-duration:2.5s; animation-duration:2.5s; }
 
 .fade-in {opacity:0; -webkit-animation:fadeIn ease-in 1; -moz-animation:fadeIn ease-in 1; animation:fadeIn ease-in 1;
     -webkit-animation-fill-mode:forwards; -moz-animation-fill-mode:forwards; animation-fill-mode:forwards;
@@ -67,7 +67,7 @@ body, body * {vertical-align: baseline; border: 0 none; outline: 0; padding: 0; 
 .spin-in-out {
      -webkit-animation:spin linear infinite; -moz-animation:spin linear infinite; animation:spin linear infinite;
     -webkit-animation-fill-mode:forwards; -moz-animation-fill-mode:forwards; animation-fill-mode:forwards; 	
-	-webkit-animation-duration:1.2s; -moz-animation-duration:1.2s; animation-duration:1.2s;
+	-webkit-animation-duration:1.5s; -moz-animation-duration:1.5s; animation-duration:1.5s;
 }
 .spin-in-out.two {-webkit-animation-delay: 6s; -moz-animation-delay: 6s; animation-delay: 6s;}
 

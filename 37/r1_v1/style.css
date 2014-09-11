@@ -42,16 +42,16 @@ body, body * {vertical-align: baseline; border: 0 none; outline: 0; padding: 0; 
 @-moz-keyframes spin  { from {  -moz-transform: rotate(0deg);  -moz-transform-origin:center;} to {  -moz-transform: rotate(720deg);  -moz-transform-origin:center; }}
 @keyframes spin  {from {  transform: rotate(0deg); transform-origin:center; } to {   transform: rotate(720deg); transform-origin:center; }}
 
-@-webkit-keyframes slideInOut { 0%{ opacity:0;  -webkit-transform: translate(0px,25px); } 15% { opacity:1;  -webkit-transform: translate(0px,0px);  } 85% { opacity:1;   -webkit-transform: translate(0px,0px); } 100% { opacity:0; -webkit-transform: translate(0px,0px);  } }
-@-moz-keyframes slideInOut  { 0%{ opacity:0;  -moz-transform: translate(0px,25px); } 15% { opacity:1;  -moz-transform: translate(0px,0px);  } 85% { opacity:1;   -moz-transform: translate(0px,0px); } 100% { opacity:0; -moz-transform: translate(0px,0px);  }  }
-@keyframes slideInOut  {0%{ opacity:0;  transform: translate(0px,25px); } 15% { opacity:1;  transform: translate(0px,0px);  } 85% { opacity:1;   transform: translate(0px,0px); } 100% { opacity:0; transform: translate(0px,0px);  }  }
+@-webkit-keyframes slideInOut { 0%{ opacity:0;  -webkit-transform: translate(25px,0px); } 15% { opacity:1;  -webkit-transform: translate(0px,0px);  } 85% { opacity:1;   -webkit-transform: translate(0px,0px); } 100% { opacity:0; -webkit-transform: translate(0px,0px);  } }
+@-moz-keyframes slideInOut  { 0%{ opacity:0;  -moz-transform: translate(25px,0px); } 15% { opacity:1;  -moz-transform: translate(0px,0px);  } 85% { opacity:1;   -moz-transform: translate(0px,0px); } 100% { opacity:0; -moz-transform: translate(0px,0px);  }  }
+@keyframes slideInOut  {0%{ opacity:0;  transform: translate(25px,0px); } 15% { opacity:1;  transform: translate(0px,0px);  } 85% { opacity:1;   transform: translate(0px,0px); } 100% { opacity:0; transform: translate(0px,0px);  }  }
 
 .fade-in-out {
     opacity:0; -webkit-animation:fadeInOut ease-in 1; -moz-animation:fadeInOut ease-in 1; animation:fadeInOut ease-in 1;
     -webkit-animation-fill-mode:forwards; -moz-animation-fill-mode:forwards; animation-fill-mode:forwards; 	
 	-webkit-animation-duration:5s; -moz-animation-duration:5s; animation-duration:5s;
 }
-.fade-in-out.one {-webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s;}
+.fade-in-out.one {-webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s; -webkit-animation-duration:4s; -moz-animation-duration:4s; animation-duration:4s;}
 .fade-in-out.two {-webkit-animation-delay: 6.5s; -moz-animation-delay:6.5s; animation-delay: 6.5s; }
 .fade-in-out.two.pictureTablet {-webkit-animation-delay: 6.5s; -moz-animation-delay:6.5s; animation-delay: 6.5s; -webkit-animation-duration:3s; -moz-animation-duration:3s; animation-duration:3s; }
 .fade-in-out.two.pictureSwirlContainer {-webkit-animation-delay: 9.0s; -moz-animation-delay:9.0s; animation-delay: 9.0s; -webkit-animation-duration:2.5s; -moz-animation-duration:2.5s; animation-duration:2.5s; }
@@ -74,6 +74,6 @@ body, body * {vertical-align: baseline; border: 0 none; outline: 0; padding: 0; 
 .slide-in-out {
     opacity:0; -webkit-animation:slideInOut ease-out 1; -moz-animation:slideInOut ease-out 1; animation:slideInOut ease-out 1;
     -webkit-animation-fill-mode:forwards; -moz-animation-fill-mode:forwards; animation-fill-mode:forwards; 	
-	-webkit-animation-duration:5.4s; -moz-animation-duration:5.4s; animation-duration:5.4s;
+	-webkit-animation-duration:4.4s; -moz-animation-duration:4.4s; animation-duration:4.4s;
 }
 .slide-in-out.one {-webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s;}
